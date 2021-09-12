@@ -25,4 +25,4 @@ QEMU and `bootimage` have to be installed.
 Licensed under [LICENSE-MIT](LICENSE-MIT)  
 
 This project uses third party code:
-* original code by phill-opp: [LICENSE-MIT](LICENSE-MIT) 
+* original code by phill-opp: [LICENSE-MIT](licenses/License_blogOS) 
