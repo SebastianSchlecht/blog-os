@@ -13,6 +13,9 @@ pub extern "C" fn _start() -> ! {
         test_main(); //This function will not return
     println!("Hello World{}", "!");
 
+    blog_os::init();
+    x86_64::instructions::interrupts::int3();
+
     loop {}
 }
 
