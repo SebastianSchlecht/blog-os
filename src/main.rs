@@ -14,7 +14,13 @@ pub extern "C" fn _start() -> ! {
     println!("Hello World{}", "!");
 
     blog_os::init();
-    x86_64::instructions::interrupts::int3();
+
+    fn stack_overflow() {
+        stack_overflow();
+    }
+    stack_overflow();
+
+    unsafe { *(0xdeedbeef as *mut u64) = 42; };
 
     loop {}
 }
