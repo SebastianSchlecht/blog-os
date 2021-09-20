@@ -26,6 +26,7 @@ spin = "0.5.2" #Spin lock
 x86_64 = "0.14.4" #IO-Port
 uart_16550 = "0.2.0" #Reporting test result via serial interface
 pic8259 = "0.10.2" #Support for the Programmable interrupt controller
+pc-keyboard = "0.5.1" #Support for PS2 scancodes
 
 [dependencies.lazy_static]
 version = "1.0"
