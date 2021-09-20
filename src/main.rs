@@ -18,10 +18,11 @@ pub extern "C" fn _start() -> ! {
     fn stack_overflow() {
         stack_overflow();
     }
-    stack_overflow();
+    // uncomment for a nice stack overflow :)
+    //stack_overflow();
 
-    unsafe { *(0xdeedbeef as *mut u64) = 42; };
 
+    println!("It did not crash!");
     loop {}
 }
 
